@@ -1,0 +1,17 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>qr-code</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-content>
+    <ion-slides>
+      <ion-slide>
+        <ion-button (click)="scan()" expand="full" fill="outline" size="large" shape="round" *ngIf="!inProcess">
+          Escanear código
+        </ion-button>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+</ion-content>

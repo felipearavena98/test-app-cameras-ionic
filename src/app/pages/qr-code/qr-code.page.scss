@@ -1,0 +1,12 @@
+:host {
+    ion-content.scanner-active {
+        background-color: transparent !important;
+    }
+}
+
+.camera-container {
+    position: relative;
+    width: 100%;
+    height: 50%; // Ajusta esto para cambiar el tamaño del contenedor de la cámara
+    overflow: hidden;
+}

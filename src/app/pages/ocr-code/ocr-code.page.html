@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Camera Preview</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="camera-preview">
+    <video #video class="camera-preview-video"></video>
+    <canvas #canvas class="camera-preview-canvas"></canvas>
+    <div class="camera-preview-text">{{ text }}</div>
+  </div>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="startCamera()" [disabled]="cameraOn">Start Camera</ion-button>
+      <ion-button (click)="stopCamera()" [disabled]="!cameraOn">Stop Camera</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-footer>

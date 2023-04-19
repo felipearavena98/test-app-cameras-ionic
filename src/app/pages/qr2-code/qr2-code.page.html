@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+    <ion-toolbar>
+        <ion-title>ocr-code</ion-title>
+    </ion-toolbar>
+</ion-header>
+<ion-content [fullscreen]="true">
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12">
+                <div class="scanner-container">
+                    <zxing-scanner #scanner (scanSuccess)="onScanSuccess($event)"></zxing-scanner>
+                </div>
+            </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-col size="12">
+                <ion-card>
+                    <ion-card-header>
+                        <ion-card-title>Resultado del escaneo</ion-card-title>
+                    </ion-card-header>
+                    <ion-card-content>
+                        {{ scanResult }}
+                    </ion-card-content>
+                </ion-card>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

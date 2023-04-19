@@ -4,7 +4,10 @@ const config: CapacitorConfig = {
   appId: 'io.ionic.starter',
   appName: 'myQrAPP',
   webDir: 'www',
-  bundledWebRuntime: false
+  bundledWebRuntime: false,
+  "plugins": {
+    "@capacitor-community/camera-preview": {}
+  }
 };
 
 export default config;
